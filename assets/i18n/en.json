@@ -1,0 +1,57 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "NishaDhere6Year.pdf",
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "With <span class='underline'>6+ years of frontend development experience</span>,I architect scalable and modular frontend systems, develop reusable and performance-optimized UI components, and implement accessibility-focused solutions aligned with web standards. I emphasize clean, maintainable, and testable code, primarily working with <span class='underline'>Angular</span> and modern <span class='underline'>JavaScript</span>.",
+  "Banner.ActionBtn": "Say Hi",
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "I’m an <span class='underline'>Angular Developer</span> with <span class='underline'>6+ years of professional experience</span> across frontend development, technical leadership, and mentoring. I enjoy transforming complex requirements into intuitive, high-performance web experiences.",
+    "I focus on optimizing applications, defining clean architecture and reusable patterns, and continuously improving the quality and impact of the products I build.",
+    "My tech stack includes:"
+  ],
+  "AboutMe.technologies": [
+    "Angular",
+    "Bootstrap",
+    "HTML & CSS",
+    "JavaScript",
+    "TypeScript",
+    "GIT",
+    "JSON",
+    "CI / CD"
+  ],  
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "Cognizant",
+      "Title": "Software Engineer",
+      "Date": "Nov 2022 - Present",
+      "Description": [
+        "👨‍🏫 Currently working on the <span class='underline'>National Securities Depository Limited</span>, one of the largest depositories in the world, managing securities in dematerialized form within the Indian capital market.",
+        "🏥 Engaged in regular client interactions to understand business requirements, collaborating with technical teams and senior management to deliver software product features that align with client needs.",
+        "⚙️ Drove frontend excellence through Angular, RxJS,REST, and CI/CD, delivering consistent, scalable, and performant user experiences.",
+        "♿ Spearheaded accessibility and UX initiatives, introducing standardized docs, developer checklists, and PR/release protocols for better quality and ISO compliance.",
+        "🧠 Optimized remote engineering processes with structured task tracking, detailed release notes, and efficient collaboration practices, boosting productivity and delivery speed."
+      ]
+    },
+    {
+      "Tab": "TCS",
+      "Title": "System Engineer",
+      "Date": "Feb 2020 - Nov 2022",
+      "Description": [
+        "👨‍🏫 Integrated <span class='underline'>Contract Finance</span> into the system from scratch, including designing UI screens, developing Java services, implementing business logic, and creating stored procedures to enable real-time data flow between the interface and the database, ensuring the system serves over 300,000 customers worldwide.",
+        "🌐 Lead a team of 7 members, following Agile methodology, conducting proper sprint planning, and maintaining a track record of 100% on-time deliveries.",
+        "📨 Translated business processes and requirements into technical integration requirements and designed appropriate technical solutions.",
+        "🧩 Collaborated with Product Management and clients to analyze requirements and provide functional suggestions, ensuring alignment with technical solutions.",
+        "🚀 Recognized with 4 On-the-Spot Awards and 2 Star of the Month Awards for outstanding performance."
+      ]
+    }
+  ],
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "Write to me, and lets build something great together.",
+  "Contact.Btn": "Contact Me"
+}
