@@ -28,8 +28,6 @@ export class BannerComponent {
   analyticsService = inject(AnalyticsService);
 
   downloadResume() {
-    this.analyticsService.sendAnalyticEvent("click_Download_Resume", "banner", "download");
-
     // Open a new window with the CV
     let url = window.location.href;
     window.open(url + "assets/cv/NishaDhere6Year.pdf", "_blank");
