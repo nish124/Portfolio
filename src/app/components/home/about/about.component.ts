@@ -12,9 +12,9 @@ export class AboutComponent {
 
   customOptions: OwlOptions = customOptions;
   ownImages = [
-    "../assets/images/IMG_111.jpeg",
-    "../assets/images/IMG_1111.jpg",
-    "../assets/images/IMG_8342.JPG"
+    "assets/images/IMG_111.jpeg",
+    "assets/images/IMG_1111.jpg",
+    "assets/images/IMG_8342.JPG"
   ]
 
   constructor(

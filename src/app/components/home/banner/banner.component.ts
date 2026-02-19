@@ -32,7 +32,7 @@ export class BannerComponent {
 
     // Open a new window with the CV
     let url = window.location.href;
-    window.open(url + "../assets/cv/NishaDhere6Year.pdf", "_blank");
+    window.open(url + "assets/cv/NishaDhere6Year.pdf", "_blank");
   }
   
  openGmail() {
