@@ -1,0 +1,82 @@
+<!-- Main Navigation Bar -->
+<nav [@animateMenu] class="navbar main-navbar on-top" [class.nav-shadow]="this.pageYPosition > 0">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand text-light cursor-pointer" (click)="logoClickHandler()">
+            <svg width="48" height="48" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="60,8 104,34 104,86 60,112 16,86 16,34" fill="none" stroke="#64ffda" stroke-width="6" />
+                <text x="50%" y="60%" text-anchor="middle" fill="#64ffda" font-family="Segoe UI, Arial" font-size="44"
+                    font-weight="700">
+                    ND
+                </text>
+            </svg>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul ngbNav #nav="ngbNav" class="menu-ul">
+            <!-- Navigation Items -->
+            @for (item of menuItems; track item.translationKey) {
+            <li ngbNavItem (click)="handleMenuItemClick(item)">
+                <a ngbNavLink class="nav-link" [ngClass]="{'main-btn': item.isCV, 'cv-btn': item.isCV}">
+                    <span class="nav-text" [ngClass]="{'underline': !item.isCV}">
+                        {{ item.translationKey | translate }}
+                    </span>
+                </a>
+                <ng-template ngbNavContent>First content</ng-template>
+            </li>
+            }
+
+
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-wrapper">
+            <div class="hamburger-menu" [ngClass]="{'animate': responsiveMenuVisible}"
+                (click)="responsiveMenuVisible = !responsiveMenuVisible"></div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="menu-responsive" [ngStyle]="{ 'pointer-events': !responsiveMenuVisible ? 'none' : '' }">
+            <aside class="on-top"
+                [ngClass]="{'aside-show': responsiveMenuVisible, 'nav-shadow': this.pageYPosition > 0}">
+                <nav>
+                    <ol>
+                        <!-- Mobile Navigation Items -->
+                        @for (item of menuItems; track item.translationKey) {
+                        <li (click)="handleMenuItemClick(item)">
+                            <a class="menu-link" [ngClass]="{'main-btn': item.isCV, 'cv-btn': item.isCV}">
+
+                                {{ item.translationKey | translate }}
+                            </a>
+                        </li>
+                        }
+
+                        <!-- Mobile Language Selector -->
+                        <li>
+                            <div class="language-container">
+                                @for (lang of languages; track lang.code; let i = $index) {
+                                <div (click)="changeLanguage(lang.code)"
+                                    class="language-container language-container-selector" [ngClass]="{
+                                             'active': languageFormControl.value == lang.code,
+                                             'first-item': i === 0,
+                                             'last-item': i === languages.length - 1
+                                         }">
+                                    <div class="language-item">
+                                        <img width="20px" [src]="lang.flag" [alt]="lang.alt" />
+                                        <span class="flag-text">{{ lang.name }}</span>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-check2 arrow-active" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </div>
+                                }
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </aside>
+        </div>
+    </div>
+</nav>

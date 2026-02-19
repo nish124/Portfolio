@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="60,8 104,34 104,86 60,112 16,86 16,34" fill="none" stroke="#64ffda" stroke-width="8"></polygon>
+  <text x="50%" y="62%" text-anchor="middle" fill="#64ffda" font-family="Segoe UI, Arial" font-size="52" font-weight="700">
+    ND
+  </text>
+</svg>
